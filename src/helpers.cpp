@@ -9,7 +9,7 @@
 #include "constants.h"
 
 bool inMat(cv::Point p,int rows,int cols) {
-    return p.x >= 0 && p.x < cols && p.y >= 0 && p.y < rows;
+  return p.x >= 0 && p.x < cols && p.y >= 0 && p.y < rows;
 }
 
 cv::Mat matrixMagnitude(const cv::Mat &matX, const cv::Mat &matY) {
