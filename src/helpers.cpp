@@ -8,13 +8,8 @@
 
 #include "constants.h"
 
-bool rectInImage(cv::Rect rect, cv::Mat image) {
-  return rect.x > 0 && rect.y > 0 && rect.x+rect.width < image.cols &&
-  rect.y+rect.height < image.rows;
-}
-
 bool inMat(cv::Point p,int rows,int cols) {
-  return p.x >= 0 && p.x < cols && p.y >= 0 && p.y < rows;
+    return p.x >= 0 && p.x < cols && p.y >= 0 && p.y < rows;
 }
 
 cv::Mat matrixMagnitude(const cv::Mat &matX, const cv::Mat &matY) {
